@@ -7,7 +7,6 @@ import REPL
 
 # This uses some implementation details from SQLStrings
 using SQLStrings
-using SQLStrings: Sql, SplatArgs, Literal, parse_interpolations
 
 function match_magic_syntax(str)
     m = match(r"(\\d) *(.*)", str)
@@ -48,7 +47,9 @@ function libpq_eval(conn, str)
             error("Unknown magic command $(magic[1])")
         end
     else
-        query = macroexpand(SQLStrings, :(@sql_cmd $str))
+        # Trick: We macro expand @sql_cmd here in order to resolve symbols from
+        # SQLStrings without requiring `using SQLStrings` in `Main`.
+        query = macroexpand(@__MODULE__, :(@sql_cmd $str))
     end
     return quote
         $LibPQ.execute($conn, $query) |> $DataFrames.DataFrame
