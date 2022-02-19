@@ -11,7 +11,7 @@ ReplMaker = "b873ce64-0db9-51f5-a568-4457d8e49576"
 SQLStrings = "af517c2e-c243-48fa-aab8-efac3db270f5"
 
 [compat]
-LibPQ = "1"
+LibPQ = "1.12"
 ReplMaker = "0.2"
 SQLStrings = "0.1"
 julia = "1.6"
