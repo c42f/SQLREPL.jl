@@ -1,6 +1,6 @@
 # SQLREPL.jl
 
-A Julia REPL mode for Postgres SQL powered by
+A Julia REPL mode for PostgreSQL powered by
 [ReplMaker.jl](https://github.com/MasonProtter/ReplMaker.jl),
 [LibPQ.jl](https://github.com/invenia/LibPQ.jl) and
 [SQLStrings.jl](https://github.com/JuliaComputing/SQLStrings.jl).
