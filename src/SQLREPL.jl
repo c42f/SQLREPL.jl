@@ -25,7 +25,7 @@ function valid_input_checker(prompt_state)
     if !isnothing(magic)
         return !isempty(magic[2])
     end
-    length(findall(')', cmdstr)) == length(findall('(', cmdstr))
+    length(findall(")", cmdstr)) == length(findall("(", cmdstr))
 end
 
 function libpq_eval(conn, str)
