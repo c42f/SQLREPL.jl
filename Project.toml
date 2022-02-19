@@ -3,8 +3,19 @@ uuid = "b668014c-ba84-4ca4-9f65-ff5c52804072"
 authors = ["Chris Foster <chris42f@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
+LibPQ = "194296ae-ab2e-5f79-8cd4-7183a0a5a0d1"
+REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
+ReplMaker = "b873ce64-0db9-51f5-a568-4457d8e49576"
+SQLStrings = "af517c2e-c243-48fa-aab8-efac3db270f5"
+
 [compat]
+LibPQ = "1"
+ReplMaker = "0.2"
+SQLStrings = "0.1"
 julia = "1"
+DataFrames = "1"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
