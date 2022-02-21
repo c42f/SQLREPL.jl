@@ -12,7 +12,7 @@ SQLStrings = "af517c2e-c243-48fa-aab8-efac3db270f5"
 
 [compat]
 LibPQ = "1.12"
-ReplMaker = "0.2"
+ReplMaker = "0.2.7"
 SQLStrings = "0.1"
 julia = "1.6"
 DataFrames = "1"
