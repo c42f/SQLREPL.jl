@@ -7,9 +7,9 @@ A Julia REPL mode for PostgreSQL powered by
 
 ## Tutorial
 
-This is an unregistered package but you can install it with Julia's Pkg mode:
+Install the package with Julia's Pkg mode:
 ```
-pkg> add https://github.com/c42f/SQLREPL.jl
+pkg> add SQLREPL
 ```
 
 To connect the REPL mode, you'll need a connection string for your Postgres
